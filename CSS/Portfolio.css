@@ -278,3 +278,51 @@ box-shadow: -9px 3px 33px 3px rgba(73, 99, 99, 0.696);}
     padding: 3%;
     margin: 1%;
 }
+/*---------------------Loading Div----------------------------------*/
+.LoadingDiv{
+    display:grid;
+    
+    background-image: url("../assets/Logo.png");
+   background-size: cover;
+   background-position: center;
+    color:aliceblue;
+    padding: 1%;
+    background-blend-mode:exclusion;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 13;
+    text-align: center;
+    
+}
+.LoadingDiv h1,strong{
+    padding: 0.3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-align: center;
+
+}
+.LoadingDiv progress{
+    padding: 3%;
+    height: 15%;
+  
+   width: 50%;
+    align-self: center;
+    align-items: center;
+ 
+    
+}
+.LoadingDiv div{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.721);
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   justify-items: center;
+   padding-top: 1%;
+}
+

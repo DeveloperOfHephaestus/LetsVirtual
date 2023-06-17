@@ -66,11 +66,18 @@ Camera.lookAt(new THREE.Vector3(0,1,-5))
 //
 
 //progress handler
-function ProgressHandler()
-{
+
+
+//load controller
+const loadBar=document.getElementById("loaded");
+const loadDiv=document.getElementById("loadDiv");
+const percentShow=document.getElementById("percent");
+
+function ProgressHandler(url,loaded,total)
+{ loadBar.value=Math.floor((loaded/total)*100);
+  percentShow.innerText=loadBar.value+" % loaded";
 
 }
-//
 
 
 
@@ -215,7 +222,7 @@ if(GreeterSelected=="Armina")
   Scene_Handler.ChangePosition("case",0,0.25,0.05);
 }
 
-
+loadDiv.remove();
 
 }
 //some before access varribales

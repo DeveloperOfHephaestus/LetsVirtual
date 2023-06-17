@@ -67,8 +67,16 @@ Camera.lookAt(new THREE.Vector3(0,1,-5))
 //
 
 //progress handler
-function ProgressHandler()
-{
+
+
+//load controller
+const loadBar=document.getElementById("loaded");
+const loadDiv=document.getElementById("loadDiv");
+const percentShow=document.getElementById("percent");
+
+function ProgressHandler(url,loaded,total)
+{ loadBar.value=Math.floor((loaded/total)*100);
+  percentShow.innerText=loadBar.value+" % loaded";
 
 }
 //
@@ -155,7 +163,8 @@ description:"Enjoy 3D harmony , enter a virtual world and enjoy 3d music with th
 
 //model Adder
 function AddModels()
-{ Scene_Handler.Add_Recursive_Collection([Greeter,Greeter2,Greeter3,documentsCase,BG]);
+{ 
+  Scene_Handler.Add_Recursive_Collection([Greeter,Greeter2,Greeter3,documentsCase,BG]);
   //default greeter  
  if(GreeterSelected=="Default"||GreeterSelected==undefined)
 Scene_Handler.Add_Recursive_Models([Greeter,BG]);
@@ -291,7 +300,7 @@ if(GreeterSelected=="Armina")
  
 }
 
-
+loadDiv.remove();
 
 }
 //some before access varribales
@@ -370,7 +379,6 @@ CancelProjectInfo.onclick=function(){
 const infoDiv=document.getElementById("pi");
 infoDiv.addEventListener("mouseover",function(){allowClick=false});
 infoDiv.addEventListener("mouseleave",function(){allowClick=true});
-
 
 
 
