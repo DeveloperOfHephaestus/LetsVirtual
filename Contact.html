@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Virtual</title>
+    <link rel="stylesheet" href="./CSS/Portfolio.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+</head>
+<body>
+    <section class="menu">
+        <a href="./index.html"> <img src="./assets/HomeIcon.png" height="30px" width="50px">Home</a>
+        <a href="./Projects.html"><img src="./assets/ProjectsIcon.png" height="30px" width="50px"> Projects</a>
+        <a href="./About.html"><img src="./assets/AboutMe.png" height="30px" width="50px">About</a>
+        <a href="./Contact.html" style="background: rgba(4, 11, 11, 0.991);"><img src="./assets/Contact.png" height="30px" width="50px">Contact</a>
+      </section>
+      <div class="Info" style="display: none;" id="info">
+        
+       <p></p>
+      </div>
+      
+      <div class="RotateGuide" id="guide">
+        <p>Keep clicking on phone behind greeter <strong>Click and contact</strong></p>
+        <button id="GuideCancel">Click to Cancel</button>
+      </div>
+
+
+<div class="Contact" id="Contact">
+  <div class="VirtualContact">
+    <h1>Send Message Virtually</h1>
+    <strong>If you want direct contact , you can choose gmail or tiktok</strong>
+    <img src="./assets/VirtualContactIcon.png" height="500px" width="300px">
+    <input type="text" id="VirtualMessage" placeholder="Write your message here and i will respond soon"
+     >
+    
+  </div>
+
+  <div class="TikTok">
+    <h1>TikTok</h1>
+   <p><strong>you can follow my id M_Kopesh</strong><p>
+    <img src="./assets/TikTok.png" height="500px" width="300px">
+ 
+    
+  </div>
+
+  <div class="Gmail">
+    <h1>Gmail</h1>
+   <p><strong>you can send gmail to my id  bombhacksbomb@gmail.com</strong></p>
+    <img src="./assets/GmailContactIcon.png" height="500px" width="300px">
+ 
+    
+  </div>
+  <button id="CancelContact">Cancel</button>
+</div>   
+</body>
+</html>
+<script type="importmap">
+    { 
+     "imports":{
+       "three":"./3D Core Modules/three.module.js"
+     }  
+   
+    }
+   </script>
+<script type="module" src="./Contact.js"></script>

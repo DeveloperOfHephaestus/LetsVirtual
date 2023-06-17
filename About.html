@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Virtual </title>
+    <link rel="stylesheet" href="./CSS/Portfolio.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+</head>
+<body>
+<section class="menu">
+  <a href="./index.html"> <img src="./assets/HomeIcon.png" height="30px" width="50px">Home</a>
+  <a href="./Projects.html"><img src="./assets/ProjectsIcon.png" height="30px" width="50px"> Projects</a>
+  <a href="./About.html" style="background: rgba(4, 11, 11, 0.991);"><img src="./assets/AboutMe.png" height="30px" width="50px">About</a>
+  <a href="./Contact.html"><img src="./assets/Contact.png" height="30px" width="50px">Contact</a>
+</section>
+<div class="Info" style="display: none;" id="info">
+  
+ <p></p>
+</div>
+
+<div class="RotateGuide" id="guide">
+  <p>Look around and find breif case , click on it , <strong>I think greeter is holding in its hand</strong></p>
+  <button id="GuideCancel">Click to Cancel</button>
+</div>
+
+<div class="BreifCase" id="BreifCaseDiv">
+<img src="./assets/JustMe.jpg" height="100px" width="100px">
+  <h2>Saif-ur-Rehman</h2>
+<table>
+  <tr><th>Skills</th><th>Examples</th><th>Percentage</th></tr>
+  <tr><td>HTML</td><td>This web</td><td>70%</td></tr>
+  <tr><td>JS & DOM</td><td>This web</td><td>90%</td></tr>
+  <tr><td>CSS</td><td>This web</td><td>50%</td></tr>
+  <tr><td>THREE-Js</td><td>This web</td><td>90%</td></tr>
+  <tr><td>Node-JS</td><td>This web </td><td>50%</td></tr>
+  <tr><td>Socket-IO</td><td>Simple Message App</td><td>70%</td></tr>
+</table>
+<h2>Hobbies</h2>
+<ol>
+  <li>Messing around Codes</li>
+  <li>Creating Web Apps</li>
+  <li>Acting as Developers</li>
+  <li>Playing andriod games like (PUBG,Lumber INC,Gun Sprint)</li>
+   <li>Playing Console games like (God of War , Horizon)</li>
+</ol>
+<button id="CancelAbout">Cancel</button>
+
+</div>
+</body>
+</html>
+<script type="importmap">
+ { 
+  "imports":{
+    "three":"./3D Core Modules/three.module.js"
+  }  
+
+ }
+</script>
+
+<script src="./About.js" type="module"></script>

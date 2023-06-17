@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Virtual </title>
+    <link rel="stylesheet" href="./CSS/Portfolio.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+</head>
+<body>
+<section class="menu">
+  <a href="./index.html" style="background: rgba(4, 11, 11, 0.991);"> <img src="./assets/HomeIcon.png" height="30px" width="50px">Home</a>
+  <a href="./Projects.html"><img src="./assets/ProjectsIcon.png" height="30px" width="50px"> Projects</a>
+  <a href="./About.html"><img src="./assets/AboutMe.png" height="30px" width="50px">About</a>
+  <a href="./Contact.html"><img src="./assets/Contact.png" height="30px" width="50px">Contact</a>
+</section>
+<section class="Accessories">
+
+    <h3>Change Greeter</h3>
+    <button id="GreeterChange">Click here</button>
+    <h3>Change Brightness</h3>
+    <input type="range" id="Brightness" max="100" min="10">
+    <h3>Help</h3>
+    <button>Click here</button>
+    <h3>Shineness</h3>
+    <input type="checkbox" id="isShining">
+  
+</section>
+<div class="Info" style="display: none;" id="info">
+  
+ <p></p>
+</div>
+<div class=GreeterSelection id="GS" style="display: none;"><h1>Select Greeter of your choice : <strong>Selected greeter will be your host accross web</strong></h1><img id="Default" src=./assets/Greeter1Image.png height=300px width=300px><img id="Armina" src=./assets/Greeter3Image.png height=300px width=300px><img id="JSON" src=./assets/Greeter4Image.png height=300px width=300px></div></div>
+
+<div class="RotateGuide" id="guide">
+  <img src="./assets/RotateGuide.png" height="200px" width="200px">
+  <p>Hold or click and move to rotate 3D </p>
+  <button id="GuideCancel">Click to Cancel</button>
+</div>
+</body>
+</html>
+<script type="importmap">
+ { 
+  "imports":{
+    "three":"./3D Core Modules/three.module.js"
+  }  
+
+ }
+</script>
+
+<script src="./main.js" type="module"></script>

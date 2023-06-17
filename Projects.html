@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Virtual</title>
+    <link rel="stylesheet" href="./CSS/Portfolio.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+</head>
+<body>
+    <section class="menu">
+        <a href="./index.html"> <img src="./assets/HomeIcon.png" height="30px" width="50px">Home</a>
+        <a href="./Projects.html" style="background: rgba(4, 11, 11, 0.991);"><img src="./assets/ProjectsIcon.png" height="30px" width="50px"> Projects</a>
+        <a href="./About.html"><img src="./assets/AboutMe.png" height="30px" width="50px">About</a>
+        <a href="./Contact.html" ><img src="./assets/Contact.png" height="30px" width="50px">Contact</a>
+      </section>
+      <div class="Info" style="display: none;" id="info">
+        
+       <p></p>
+      </div>
+      
+      <div class="RotateGuide" id="guide">
+        <p>Click on Brief Case <strong>its infront of you </strong></p>
+        <button id="GuideCancel">Click to Cancel</button>
+      </div>
+      <div class="ProjectInfo" id="pi">
+        <h1>Project :  <strong id="title"></strong></h1>
+        <p id="Description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ipsam, impedit maiores repudiandae minus possimus, iusto laborum nulla vitae optio quaerat fugiat corporis voluptas asperiores omnis voluptatem dolores, odit explicabo.
+
+        </p>
+        <button>Click to go to project</button>
+        <button id="infoCancel">Cancel</button>
+      </div>
+  
+  
+</body>
+</html>
+<script type="importmap">
+    { 
+     "imports":{
+       "three":"./3D Core Modules/three.module.js"
+     }  
+   
+    }
+   </script>
+<script type="module" src="./Projects.js"></script>

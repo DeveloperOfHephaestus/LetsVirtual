@@ -1,0 +1,12 @@
+{
+  "name": "personalportfolio",
+  "version": "1.0.0",
+  "description": "My personal 3D portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Web":"nodemon index"
+  },
+  "author": "Saif-ur-Rehman",
+  "license": "ISC"
+}
