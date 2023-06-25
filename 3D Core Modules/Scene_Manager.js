@@ -96,7 +96,7 @@ export class SceneManager
     return model;
    }
    Image_Textures_Maker(url,repeatX,repeatY,wrapS,wrapT)
-   { let texture=new THREE.TextureLoader().load(url);
+   { let texture=new THREE.TextureLoader(this.LoadingManager).load(url);
      texture.repeat.set(repeatX,repeatY);
      texture.wrapS=wrapS;
      texture.wrapT=wrapT;

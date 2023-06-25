@@ -146,13 +146,16 @@ Scene.add(ProjectGroup);
 
 //adding data
 Project1.userData={title:"Virtual Squid Game ",
-description:"Play a 3d squid game , you know green light red light , avoid doll 's gaze at all cost "
+description:"Play a 3d squid game , you know green light red light , avoid doll 's gaze at all cost ",
+link:"./VirtualMusicPlayer.html"
 };
 Project2.userData={title:"Virtual Chat App ",
-description:"Chat with others online and virtually , enjoy 3D experience"
+description:"Chat with others online and virtually , enjoy 3D experience",
+link:"./VirtualMusicPlayer.html"
 }
 Project3.userData={title:"Virtual Music Player ",
-description:"Enjoy 3D harmony , enter a virtual world and enjoy 3d music with this music player "
+description:"Enjoy 3D harmony , enter a virtual world and enjoy 3d music with this music player ",
+link:"./VirtualMusicPlayer.html"
 }
 
 
@@ -346,6 +349,7 @@ function RenderLoop(){
      { document.getElementById("pi").style.display="grid";  
       document.getElementById("title").innerText=i[0].object.userData.title;
         document.getElementById("Description").innerText=i[0].object.userData.description;
+        document.getElementById("go").href=i[0].object.userData.link;
        
      
      }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Music Player</title>
+    <link rel="stylesheet" href="./CSS/VirtualMusic.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+</head>
+<body>
+  <div class="Loading" id="loadClass">
+    <div class="loading">
+      <h1>Welcome to Virtual Music Player</h1>
+      <h2>Guide</h2>
+      <p>You are in car and your player is Maclaren Music Player</p>
+      <p>Find secreen in car and click on it </p>
+      <p>Upload a song and press play</p>
+      <p>Enjoy 3D audio experience</p>
+  
+    <h2>Please wait taking you virtually</h2>
+    <progress id="prog" value="0" max="100" min="0"></progress>
+    <h3 id="loaded">waiting for DOM load</h3>
+    </div>
+    
+    
+     
+  </div>
+<div class="Controls" style="display:flex" id="Controls">
+  <img src="./assets/Ground/MclarenLogo.jpg">
+<img src="./assets/Cancel.png" id="Icons">
+<h1>Audio Controls</h1>
+<div class="console">
+  <p id="console">No song selected please upload a song and press play</p>
+</div>
+<input type="file" id="select">
+<div class="soundC">
+  <button id="stop">Stop</button>
+  <button id="play">Play</button>
+  <button id="next">Next</button>
+</div>
+</div>
+</body>
+</html>
+<script type="importmap">
+    { 
+     "imports":{
+       "three":"./3D Core Modules/three.module.js"
+     }  
+   
+    }
+   </script>
+   <script type="module" src="./VirtualMusicPlayer.js"></script>

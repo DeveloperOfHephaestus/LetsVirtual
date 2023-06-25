@@ -1,0 +1,203 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+.Intro{
+    position: absolute;
+    color: wheat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    text-decoration-color: burlywood;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    justify-items: flex-start;
+    height: 10%;
+    width: 50%;
+    left: 0%;
+    top: 1%;
+
+}
+.Intro h1{padding-top: 3%;align-self:flex-start}
+.Intro img{height: 100%;width: 50%;padding: 2%;}
+
+
+.Controls{
+    z-index: 10;
+    display: flex;
+   overflow: hidden;
+    height: 50%;
+    width: 50%;
+    background-color: rgb(0, 1, 1);
+    color: aliceblue;
+    position: absolute;
+    padding: 1%;
+    border: 0.5em ridge rgb(199, 225, 225);
+    top: 25%;
+    left: 25%;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+    justify-content:flex-start;
+     text-align: center;
+    justify-items: center;
+    border-radius: 1em;
+    animation: ShowDiv 1s ease-in-out 1;
+}
+::-webkit-file-upload-button{
+    background: rgba(2, 14, 14, 0.87);
+    color: antiquewhite;
+    margin-bottom: 1%;
+    border-radius: 1em;
+    border: 0.3em ridge rebeccapurple;
+    margin: 1%;
+    padding: 5%;
+    position: relative;
+    align-self: center;
+    font-weight: 900;
+  
+}
+::-webkit-file-upload-button:hover{
+    background: goldenrod;color: rebeccapurple;
+   cursor: pointer;
+}
+.Controls input{position: relative;align-self: center;}
+.Controls img{
+    height: 30%;
+    width: 100%;
+   align-self: center;
+   
+    
+
+
+   
+}
+#Icons{
+    position: absolute;
+    height: 15%;
+    width: 10%;
+    left: 90%;
+    top: 0%;
+    border-radius: 10em;
+    
+}
+#Icons:hover{
+    box-shadow: 0px 0px 103px 20px rgba(14, 66, 66, 0.87); 
+   cursor: pointer;
+}
+button{
+    padding: 2%;
+    margin: 2%;
+    background: rgba(1, 41, 65, 0.87);
+    color: antiquewhite;
+    box-shadow: 0px 0px 13px 11px rgba(5, 116, 129, 0.87);
+    border-radius: 1em;
+    border: 2px solid rgb(160, 153, 167);
+    font-weight: 900;
+    cursor: pointer;
+
+}
+button:hover{background: goldenrod;color:rebeccapurple;}
+.soundC{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.console{
+    height: 10%;
+    width: 100%;
+    background: rgba(12, 2, 24, 0.687);
+    color:rgb(230, 213, 213);
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  
+}
+.console p{
+    animation: LeftRight 10s ease-in infinite;
+}
+@keyframes LeftRight {
+    from{transform: translateX(100px);}
+    50%{transform: translateX(0px);}
+    to{transform: translateX(-100px);}
+    
+}
+::-webkit-scrollbar{
+    background: rgb(3, 79, 99);
+    border-radius: 1em;
+}
+::-webkit-scrollbar-track{
+    background: rgba(12, 2, 24, 0.687);
+
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(firebrick,transparent,crimson);
+    border-radius: 1em;
+}
+@keyframes ShowDiv {
+   from{opacity: 0.5;}
+    50%{transform: translateY(-100px);}
+    100%{transform: translateY(0px);}
+    
+}
+#Secreen
+{
+    position: absolute;
+}
+.Loading{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+    background:url("../assets/Ground/BG.png");
+    background-position: center;
+    background-size: cover;
+    
+    color:beige;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.Loading img{height: 30%;width: 30%;}
+.loading{height:fit-content;
+width: 50%;
+padding: 2%;
+background:linear-gradient(rgb(2, 2, 3),rgb(4, 3, 28),rgb(7, 1, 8));
+border: 0.3em ridge rgb(3, 79, 99);
+border-radius: 2em;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+justify-items: center;
+animation: loading 5s ease-in-out infinite;
+
+}
+progress{
+    background-color: cadetblue;
+    appearance: none;
+    width: 100%;
+  
+}
+::-webkit-progress-bar{
+    appearance: none;
+    background: rgb(0, 0, 0);
+    
+}
+@keyframes loading {
+   
+   50%{}
+    
+    
+}
