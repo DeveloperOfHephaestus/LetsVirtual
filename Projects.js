@@ -349,7 +349,7 @@ function RenderLoop(){
      { document.getElementById("pi").style.display="grid";  
       document.getElementById("title").innerText=i[0].object.userData.title;
         document.getElementById("Description").innerText=i[0].object.userData.description;
-        document.getElementById("go").href=i[0].object.userData.link;
+        document.getElementById("go").onClick=function(){window.location.replace(i[0].object.userData.link)};
        
      
      }
