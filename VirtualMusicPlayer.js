@@ -98,7 +98,7 @@ function progress(url,loaded,total){
 
 
 //models
-const Maclaren=Scene_Manager.Model_Adder("./assets/Ground/Maclaren.glb","laren");
+const Maclaren=Scene_Manager.Model_Adder("./assets/Ground/MacLaren.glb","laren");
 const MaclenProps={w1:undefined,w2:undefined,w3:undefined,w4:undefined,Secreen:undefined}
 const Driver=Scene_Manager.Model_Adder("./assets/Ground/Driver.glb","driver");
 
